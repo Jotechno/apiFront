@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar colegio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
+    " rel="stylesheet">
+</head>
+
+<body onload="asignarFecha()">
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+
+                        <input id="direccion" type="text" class="validate">
+                        <label for="direccion">Dirección</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+
+                        <input id="latitud" type="number" class="latitud">
+                        <label for="latitud">Latitud</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+
+                        <input id="longitud" type="number" class="longitud">
+                        <label for="longitud">Longitud</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="descripcion" type="text" class="validate">
+                        <label for="descripcion">Descripcion</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="fecha" type="text" class="validate" >
+                        <label for="fecha">Fecha de reporte</label>
+                    </div>
+                </div>
+                <button id="btnRegistrar" class="btn waves-effect waves-light green"
+                        type="button" name="action">Aceptar
+                        <i class="material-icons right">send</i>
+                </button>
+                <a href="listarColegios.html"><button id="btnCancelar" class="btn waves-effect waves-light red"
+                        type="button" name="action">Cancelar
+                        <i class="material-icons right">send</i>
+                    </button></a>
+            </form>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js
+"></script>
+    <script src="js/funcionesColegio.js">
+
+    </script>
+
+</body>
+
+</html>

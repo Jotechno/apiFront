@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+
+</head>
+
+<body onload="listarDatos()"> <!--  onload carga una funcion Especial en el body -->
+    <div class="container">
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>
+                        Direccion
+                    </th>
+                    <th>
+                        Latitud
+                    </th>
+                    <th>
+                        Longitud
+                    </th>
+                    <th>
+                        Descripción
+                    </th>
+                    <th>
+                        Fecha
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="contenido">
+
+            </tbody>
+        </table>
+        <div style="margin-bottom: 10px;">
+            <a href="registrarColegio.html" class="waves-effect waves-light btn">Registrar colegio</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="waves-effect waves-light purple btn">CLICK
+                HERE!!!!</a>
+        </div>
+    </div>
+
+    <!-- Modal Trigger modales antes de los scripts, donde va el formualario -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+
+                                <input id="direccion" type="text" class="validate" placeholder="direccion" >
+                                <label for="direccion">Direccion antigua</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+
+                                <input id="direccionNueva" type="text" class="validate" placeholder="direccionNueva">
+                                <label for="direccionNueva">Direccion nueva</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+
+                                <input id="latitud" type="number" class="latitud">
+                                <label for="latitud">Latitud</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+
+                                <input id="longitud" type="number" class="longitud">
+                                <label for="longitud">Longitud</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="descripcion" type="text" class="validate">
+                                <label for="descripcion">Descripcion</label>
+                            </div>
+                        </div>
+                        <button id="btnActualizar" class="btn waves-effect waves-light" type="button"
+                                name="action">Actualizar
+                                <i class="material-icons right">send</i>
+                        </button>
+                        <!-- <button id="btnCancelar" class="btn waves-effect waves-light red"
+                            type="button" name="action">Cancelar
+                            <i class="material-icons right">send</i>
+                        </button> -->
+                    </form>
+                </div>
+            </div>
+        
+        
+            
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat red">Cancelar</a>
+        </div>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/funcionesColegio.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+          //  var instances = M.Modal.init(elems, options);
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('.modal').modal();
+          });
+    </script>
+</body>
+
+</html>
